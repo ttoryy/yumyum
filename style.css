@@ -1,0 +1,131 @@
+:root {
+    /* clolor */
+    --white-color: #ffff;
+    --black-color: #030303;
+    --grey-color: #888888;
+    --grey-light-color: #ececec;
+    --pink-color: #ffcdd2;
+    --pink-dark-color: #cb9ca1;
+
+    /* size */
+    --padding: 12px;
+
+    /* font size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+    }
+
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Roboto;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    button,
+    button:focus {
+        border: none;
+        cursor: pointer;
+        outline: none;
+        background-color: var(--white-color);
+    }
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--pink-dark-color);
+    color: var(--white-color);
+} 
+
+.logo {
+    color: var(--white-color);
+    font-size: var(--font-large);
+    padding: var(--padding);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+    padding: var(--padding);
+    gap: 30px;
+}
+
+
+.icons {
+    color: var(--pink-color);
+    font-size: var(--font-large);
+    padding: var(--padding);
+    gap: 30px;
+}
+
+/* main */
+.topp .tung {
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-light-color);
+    font-size: var(--font-small);
+    padding: var(--padding);
+
+}
+.topp img {
+    width: 100%;
+    height: auto;
+}
+
+.middle .pagetitle .headline {
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-light-color);
+    padding: var(--padding);
+    font-size: 50px;
+    color: var(--pink-dark-color);
+}
+
+.middle .pagetitle .subline {
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-light-color);
+    font-size: 40px;
+    color: var(--pink-dark-color);
+}
+
+.middle .pagetitle .Reservation {
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-light-color);
+    padding: var(--padding);
+    font-size: var(--font-medium);
+    color: var(--black-color);
+}
+
+.middle .pagetitle img {
+    width: 100%;
+    height: auto;
+}
+
+.bottom .service {
+    display: flex;
+    justify-content: center;
+    background-color: var(--pink-dark-color);
+    font-size: var(--font-small);
+    padding: var(--padding);
+}
+
+.bottom .footer-legar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--pink-dark-color);
+    font-size: var(--font-small)
+}
