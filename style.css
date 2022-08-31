@@ -26,7 +26,7 @@
     body {
         font-family: Roboto;
     }
-    
+
     ul {
         list-style: none;
     }
@@ -36,38 +36,62 @@
         border: none;
         cursor: pointer;
         outline: none;
-        background-color: var(--white-color);
+        background-color: var(--pink-dark-color);
     }
 
 /* Header */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: var(--padding);
     background-color: var(--pink-dark-color);
     color: var(--white-color);
 } 
 
 .logo {
+    display: flex;
     color: var(--white-color);
     font-size: var(--font-large);
     padding: var(--padding);
+
+}
+
+.logo a {
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: var(--white-color);
-    padding: var(--padding);
+    padding: 8px 30px;
     gap: 30px;
+    width: 100%;
+    text-align: center;
+}
+.menu li:hover {
+    background-color: var(--grey-color);
+    border-radius: 3px;
 }
 
 
 .icons {
-    color: var(--pink-color);
+    display: flex;
+    color: var(--white-color);
     font-size: var(--font-large);
     padding: var(--padding);
-    gap: 30px;
+    gap: 20px;
+}
+
+.btn {
+    display: block;
+    padding: var(--padding);
+}
+
+.btn i {
+    color: var(--white-color);
 }
 
 /* main */
@@ -212,3 +236,36 @@ header {
     background-color: var(--pink-dark-color);
     font-size: var(--font-small)
 }
+
+/* 반응형 웹*/
+@media screen and (min-width: 768px) {
+    .btn {
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .title {
+        display: none;
+    }
+    .menu {
+        flex-direction: column;
+        padding: 40px 30px 8px 20px ;
+    }
+    .logo {
+        display: flex;
+    }
+    .icons {
+        display: none;
+    }
+    .menu.active {
+        display: flex;
+    }
+}
+
+/*토글 버튼 만들어라 토리양*/

@@ -26,3 +26,11 @@ for (i = 0; i < dots.length; i++) {
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
 }
+
+// menu toggle
+const btn = document.querySelector('.btn');
+const menu = document.querySelector('.menu');
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle('active')
+})
