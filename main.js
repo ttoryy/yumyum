@@ -28,9 +28,11 @@ dots[slideIndex-1].className += " active";
 }
 
 // menu toggle
-const btn = document.querySelector('.btn');
+const togglebtn = document.querySelector('.btn');
 const menu = document.querySelector('.menu');
+const icon = document.querySelector('.icons');
 
-btn.addEventListener('click', () => {
-    menu.classList.toggle('active')
+togglebtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    icon.classList.toggle('active');
 })

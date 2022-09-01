@@ -10,15 +10,15 @@
     crossorigin="anonymous"> 
     </script>
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <title>yumyum</title>
 </head>
 <body>
     <!--header-->
-        <header class="header">
+    <nav class="header">
         <div class="logo">
             <i class="fa-solid fa-cookie-bite"></i>
-            <a href="">YUMYUM</a>
+            <a href=" ">YUMYUM</a>
         </div>
 
         <ul class="menu">
@@ -30,52 +30,52 @@
         </ul>
 
         <ul class="icons">
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><i class="fa-solid fa-user"></i></li>
-        </ul>
-        
-        <ul class="btn">
-            <button><i class="fa-solid fa-bars"></i></button>
+            <li><a href="" target="_blank"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa-solid fa-user"></i></a></li>
         </ul>
 
-        </header>
+        <a href="#" class="btn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+
     <!--main-->
     <!--Slideshow container-->
     <div class="slideshow-container">
-    <div class="top-slideshow">
-        <div class="numbertext">1 / 3</div>
-        <img src="image/top.jpg" sytle="width:100%">
-        <div class="text">...</div>
-    </div>    
+        <div class="top-slideshow">
+            <div class="numbertext">1 / 3</div>
+            <img src="image/top.jpg" sytle="width:100%">
+            <div class="text">...</div>
+        </div>    
 
-    <div class="top-slideshow">
-        <div class="numbertext">2 / 3</div>
-        <img src="image/top2.png" sytle="width:100%">
-        <div class="text">...</div>
+        <div class="top-slideshow">
+            <div class="numbertext">2 / 3</div>
+            <img src="image/top2.png" sytle="width:100%">
+            <div class="text">...</div>
+        </div>
+
+        <div class="top-slideshow">
+            <div class="numbertext">3 / 3</div>
+            <img src="image/top3.jpg" sytle="width:100%">
+            <div class="text">...</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-
-    <div class="top-slideshow">
-        <div class="numbertext">3 / 3</div>
-        <img src="image/top3.jpg" sytle="width:100%">
-        <div class="text">...</div>
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
 
     <!-- The dots/circles -->
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-        <span class="tung"><a href=" ">온라인으로 쇼핑</a>하고 무료배송, 스페셜리스트지원 등의 혜택을 받으세요.</span>
-        <br>
-        <br>
-        <section class="middle">
-            <div class="pagetitle">
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <span class="tung"><a href=" ">온라인으로 쇼핑</a>하고 무료배송, 스페셜리스트지원 등의 혜택을 받으세요.</span>
+    <br>
+    <br>
+    <section class="middle">
+    <div class="pagetitle">
                 <h2 class="headline">YUMYUM LEMON CAKE</h2>
                 <h3 class="subline">더운여름 상큼한 레몬</h3>
                 <span class="Reservation""><a href=" ">예약하러가기</a>          
